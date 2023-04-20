@@ -1,0 +1,11 @@
+# The following code is derived from the "app.yaml" file provided by the Fall 2022 Cloud Application Development course(CS493) at Oregon State University
+# on the "Exploration - Authentication in Python" webpage linked here: https://canvas.oregonstate.edu/courses/1890665/pages/exploration-authentication-in-python?module_item_id=22486484
+
+runtime: python39
+
+handlers:
+  # This handler routes all requests not caught above to your main app. It is
+  # required when static routes are defined, but can be omitted (along with
+  # the entire handlers section) when there are no static files defined.
+- url: /.*
+  script: auto
